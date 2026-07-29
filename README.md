@@ -2,6 +2,13 @@
 
 The basic mod needed by CypressFabric equivalent to OSL or Fabric API but even more important
 
-## Problems
+## Known Problems caused by fabric
 
-- Commands don't seem to work
+- None as of now
+
+## Fixed problems
+
+- Sound and resource extraction doesn't work
+- Crash when creating a world
+- Crash when dying in freerun
+

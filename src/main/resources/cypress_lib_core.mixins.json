@@ -4,10 +4,11 @@
   "package": "net.cfauto.cypress_lib_core.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "ResourceDownloaderMixin"
   ],
   "client": [
-    "WorldGenHouseBigMixin"
+    "WorldGenHouseBigMixin",
+    "ResourceDownloaderMixin",
+    "TitleScreenMixin"
   ],
   "server": [
   ],
