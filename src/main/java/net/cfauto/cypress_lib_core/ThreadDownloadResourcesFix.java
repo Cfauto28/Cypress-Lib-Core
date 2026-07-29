@@ -1,6 +1,5 @@
 package net.cfauto.cypress_lib_core;
 
-import net.minecraft.client.resource.ResourceDownloader;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;

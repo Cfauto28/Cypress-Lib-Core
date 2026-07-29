@@ -23,9 +23,10 @@ public class WorldGenHouseBigMixin {
 		Doorless,
 		PlateDecor;
 
-		private EnumHouseBig() {
+		EnumHouseBig() {
 		}
 	}
+
 	@Shadow
 	@Final
 	private ImprovedNoise noiseMap2;
