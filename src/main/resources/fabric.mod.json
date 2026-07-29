@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "cypress_lib_core",
+	"version": "${version}",
+	"name": "Example mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://example.com/",
+		"sources": "https://github.com/OrnitheMC/ornithe-template-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cypress_lib_core/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"init": [
+		]
+	},
+	"mixins": [
+		"cypress_lib_core.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.0",
+		"minecraft": "1.0.0-alpha.1.0.16.5.20"
+	},
+  "accessWidener": "cypress_lib_core.classtweaker"
+}

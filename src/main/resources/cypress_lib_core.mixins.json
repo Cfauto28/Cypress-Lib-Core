@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.cfauto.cypress_lib_core.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "ResourceDownloaderMixin"
+  ],
+  "client": [
+    "WorldGenHouseBigMixin"
+  ],
+  "server": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
