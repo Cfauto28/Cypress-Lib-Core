@@ -10,7 +10,7 @@ import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 
 public class ThreadDownloadResourcesFix extends SimpleFileVisitor<Path> {
-	protected ThreadDownloadResourcesFix() {
+	public ThreadDownloadResourcesFix() {
 	}
 
 	public @NotNull FileVisitResult visitFile(@NotNull Path path, @NotNull BasicFileAttributes basicFileAttributes) throws IOException {
