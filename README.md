@@ -4,7 +4,7 @@ The basic mod needed by CypressFabric equivalent to OSL or Fabric API but even m
 
 ## Known Problems caused by fabric
 
-- None as of now
+- Crash when interacting in any way with a vending machine
 
 ## Fixed problems
 
