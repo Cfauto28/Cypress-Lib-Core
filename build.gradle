@@ -2,26 +2,24 @@ buildscript {
     repositories {
         mavenCentral()
         flatDir {
-            dirs 'libs2'
+            dirs 'depLibs'
         }
     }
     dependencies {
-        classpath files('libs2/ploceus-1.17.local.jar')
-	//classpath files('libs2/fabric-loom-1.17.local.jar')
-        classpath files('libs2/signature-changer-1.0.0.jar')
-	classpath files('libs2/mapping-utils-0.19.2.jar')
-	classpath files('libs2/nester-1.4.0.jar')
-	classpath files('libs2/exceptor-1.1.0.jar')
-	classpath files('libs2/preen-1.1.0.jar')
-	classpath files('libs2/condor-1.4.5.jar')
-	classpath 'com.vdurmont:semver4j:3.1.0'
+        classpath files('depLibs/ploceus-1.17.local.jar')
+        classpath files('depLibs/signature-changer-1.0.0.jar')
+		classpath files('depLibs/mapping-utils-0.19.2.jar')
+		classpath files('depLibs/nester-1.4.0.jar')
+		classpath files('depLibs/exceptor-1.1.0.jar')
+		classpath files('depLibs/preen-1.1.0.jar')
+		classpath files('depLibs/condor-1.4.5.jar')
+		classpath 'com.vdurmont:semver4j:3.1.0'
     }
 }
 
 plugins {
 	id 'maven-publish'
 	id 'fabric-loom' version '1.17.17'
-	//id 'ploceus' version '1.17.local'
 }
 
 apply plugin: 'ploceus'
@@ -33,9 +31,6 @@ version = "${project.version}+mc${project.minecraft_version}"
 group = project.maven_group
 
 repositories {
-	//maven {
-	//	url = uri("${project.projectDir}/repo")
-	//}
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
@@ -44,52 +39,27 @@ repositories {
 }
 
 loom {
-	//getCustomMinecraftMetadata().set("http://127.0.0.1:5500/minecraft-info.json")
-	//getIntermediaryUrl().set("net.ornithemc:calamus-intermediary-gen2:a1.0.16.05_20")
-
 	clientOnlyMinecraftJar()
-	//noIntermediateMappings()
 	accessWidenerPath = file("src/main/resources/cypress_lib_core.classtweaker")
-
 }
 
 ploceus {
 	setIntermediaryGeneration(2)
 	disableLibraryUpgrades()
-	//ploceus.dependOsl('0.16.3', 'client')
-	//disableLvtPatch()
 }
 
 dependencies {
-
 	implementation 'org.apache.logging.log4j:log4j-api:2.23.1'
 	implementation 'org.apache.logging.log4j:log4j-core:2.23.1'
-
-/*	modImplementation files('libs2/ornithe-standard-libraries-0.20.3/osl-blocks-0.1.1+mca1.0.1_01-mc1.6.4.jar')
-	modImplementation files('libs2/ornithe-standard-libraries-0.20.3/osl-branding-0.4.3+mca1.0.1_01-mca1.2.1_01.jar')
-	modImplementation files('libs2/ornithe-standard-libraries-0.20.3/osl-core-0.9.0+mca1.0.1_01-mc14w26c.jar')
-	modImplementation files('libs2/ornithe-standard-libraries-0.20.3/osl-entrypoints-0.6.1+mca1.0.1_01-mc1.5.2.jar')
-	modImplementation files('libs2/ornithe-standard-libraries-0.20.3/osl-executors-0.1.0+mcin-20100128-2304-mcb1.9-pre2.jar')
-	modImplementation files('libs2/ornithe-standard-libraries-0.20.3/osl-items-0.1.0+mca1.0.1_01-mc1.6.4.jar')
-	modImplementation files('libs2/ornithe-standard-libraries-0.20.3/osl-keybinds-0.3.0+mca1.0.1_01-mcb1.7.3.jar')
-	modImplementation files('libs2/ornithe-standard-libraries-0.20.3/osl-lifecycle-events-0.6.1+mca1.0.1_01-mca1.2.6.jar')
-	modImplementation files('libs2/ornithe-standard-libraries-0.20.3/osl-localization-0.1.0+mca1.0.1_01-mca1.2.6.jar')
-	modImplementation files('libs2/ornithe-standard-libraries-0.20.3/osl-networking-0.9.0+mca1.0.16-mca1.2.6.jar')
-	modImplementation files('libs2/ornithe-standard-libraries-0.20.3/osl-networking-impl-0.1.1+mca1.0.16-mca1.2.6.jar')
-	modImplementation files('libs2/ornithe-standard-libraries-0.20.3/osl-resource-loader-0.7.4+mca1.0.1_01-mca1.2.1_01.jar')
-	modImplementation files('libs2/ornithe-standard-libraries-0.20.3/osl-text-components-0.1.0-alpha.3+mca0.1.0-mc1.14.4.jar')*/
 
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	exceptions ploceus.raven(project.raven_build)
+/*	exceptions ploceus.raven(project.raven_build)
 	signatures ploceus.sparrow(project.sparrow_build)
-	nests ploceus.nests(project.nests_build)
-	/*mappings ploceus.featherMappings(project.feather_build)*/
+	nests ploceus.nests(project.nests_build)*/
 
 	mappings ("net.ornithemc:feather-gen2:a1.0.16.05_20+build.1-v2")
-
-	//ploceus.dependOsl(project.osl_version)
 }
 
 processResources {
