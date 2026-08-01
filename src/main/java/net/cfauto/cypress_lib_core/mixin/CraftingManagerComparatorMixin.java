@@ -17,8 +17,8 @@ public abstract class CraftingManagerComparatorMixin {
 	 * @reason
 	 */
 	@Overwrite
-	public int compare(Recipe object1, Recipe object2) {
-		return this.compareImpl(object1, object2);
+	public int compare(Object object1, Object object2) {
+		return this.compareImpl((Recipe) object1, (Recipe) object2);
 	}
 
 }

@@ -18,7 +18,7 @@ public abstract class DistanceChunkSorterMixin {
 	 * @reason
 	 */
 	@Overwrite
-	public int compare(RenderChunk object1, RenderChunk object2) {
-		return this.compareImpl(object1, object2);
+	public int compare(Object object1, Object object2) {
+		return this.compareImpl((RenderChunk)object1, (RenderChunk)object2);
 	}
 }
