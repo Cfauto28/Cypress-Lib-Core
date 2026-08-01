@@ -5,7 +5,8 @@
 	"name": "Cypress Lib Core",
 	"description": "Required mod for using CypressFabric",
 	"authors": [
-		"Cfauto"
+		"Cfauto",
+    "FMG793"
 	],
 	"contact": {
 		"sources": "https://github.com/Cfauto28/Cypress-Lib-Core"

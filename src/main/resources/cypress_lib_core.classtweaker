@@ -1,3 +1,19 @@
 classTweaker  v1  named
 transitive-accessible field ext/world/NamedLocation p2Invalid Z
 transitive-accessible field net/minecraft/client/gui/widget/ButtonWidget width I
+transitive-accessible field net/minecraft/client/options/GameOptions minecraft Lnet/minecraft/client/Minecraft;
+transitive-accessible field ext/util/HandlerDemoPlayer field_1_2370 Ljava/util/List;
+transitive-accessible field ext/util/HandlerDemoPlayerUnknownClass2 field_1_1608 D
+transitive-accessible field ext/util/HandlerDemoPlayerUnknownClass2 field_1_1610 D
+transitive-accessible field ext/util/HandlerDemoPlayerUnknownClass2 field_1_1613 D
+transitive-accessible field ext/util/HandlerDemoPlayerUnknownClass2 field_1_1609 D
+transitive-accessible field ext/util/HandlerDemoPlayerUnknownClass2 field_1_1611 D
+transitive-accessible field ext/util/HandlerDemoPlayerUnknownClass2 field_1_1616 D
+transitive-accessible field ext/util/HandlerDemoPlayerUnknownClass2 field_1_1615 D
+transitive-accessible field ext/util/HandlerDemoPlayerUnknownClass2 field_1_1614 D
+transitive-accessible class net/minecraft/crafting/CraftingManagerComparator
+transitive-accessible method net/minecraft/entity/Entity getEyeHeight ()F
+transitive-accessible method net/minecraft/entity/mob/MobEntity getEyeHeight ()F
+transitive-accessible field net/minecraft/entity/mob/player/PlayerEntity field_1_1758 Z
+transitive-accessible method net/minecraft/entity/mob/player/PlayerEntity getEyeHeight ()F
+transitive-accessible method net/minecraft/client/resource/ResourceDownloader method_1_2275 (Ljava/nio/file/Path;)V

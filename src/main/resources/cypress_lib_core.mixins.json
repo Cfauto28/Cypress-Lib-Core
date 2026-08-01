@@ -7,7 +7,14 @@
   ],
   "client": [
     "ResourceDownloaderMixin",
-    "WorldGenHouseBigMixin"
+    "WorldGenHouseBigMixin",
+    "BlockVendingMachineMixin",
+    "CraftingManagerComparatorMixin",
+    "DirtyChunkSorterMixin",
+    "DistanceChunkSorterMixin",
+    "InventoryVendingMachineMixin",
+    "XYZvMixin",
+    "ZMWorldMixin"
   ],
   "server": [
   ],

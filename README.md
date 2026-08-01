@@ -4,10 +4,11 @@ The basic mod needed by CypressFabric equivalent to OSL or Fabric API but even m
 
 ## Known Problems caused by fabric
 
-- Crash when interacting in any way with a vending machine
+- None as of now
 
 ## Fixed problems
 
+- Crash when interacting in any way with a vending machine
 - Sound and resource extraction doesn't work
 - Crash when creating a world
 - Crash when dying in freerun
